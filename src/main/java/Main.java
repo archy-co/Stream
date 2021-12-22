@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,5 +12,12 @@ public class Main {
         List<String> chW = FlattingTask.flattingStrings(words);
         System.out.println(chW);
 
+        List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5, 6, 7);
+        List<String> fizzBuzzWords = FizzBuzzTask.fizzBuzzIt(nums);
+        System.out.println(fizzBuzzWords);
+
+        List<String> arr = Arrays.asList("ABCA", "BCD", "ABC");
+        Map<Character, Integer> res = GroupWordsTask.groupIt(arr);
+        System.out.println(res);
     }
 }
